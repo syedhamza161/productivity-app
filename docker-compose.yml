@@ -11,13 +11,13 @@ services:
       - "80:80"
 
   client:
-    image: rakeshpotnuru/productivity-app:client-latest
+    image: syedhamza161/productivity-app:client-latest
     environment:
       - CHOKIDAR_USEPOLLING=true
       - REACT_APP_BACKEND_URL=${REACT_APP_BACKEND_URL}
 
   server:
-    image: rakeshpotnuru/productivity-app:server-latest
+    image: syedhamza161/productivity-app:server-latest
     environment:
       - MONGODB_URI=${MONGODB_URI}
       - TOKEN_KEY=${TOKEN_KEY}
